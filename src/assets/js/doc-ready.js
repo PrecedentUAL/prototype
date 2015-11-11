@@ -19,7 +19,8 @@ $(function() {
 	
 	collegeMenu.init(); // collegeMenu.js
 	searchMenu.init(); // searchMenu.js
-	courseMenu.init(); // searchMenu.js
+	courseMenu.init(); // courseMenu.js
+	studyMenu.init(); // studyMenu.js
 
 });
 
