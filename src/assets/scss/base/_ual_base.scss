@@ -1,0 +1,113 @@
+/* UAL THIRD-PARTY CSS  
+Please preserve these rules and base styling.
+*/
+body {
+	font-family: "Swiss-Roman", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #000000;
+}
+
+
+.wrapper {
+	width: 92.5%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+
+.ual-header, .ual-footer {
+	background: #000;
+	color: #FFF;
+	width: 100%;
+}
+
+.ual-header h1 {
+	font-size: 30px;
+	line-height: 36px;
+	padding: 12px 0;
+	margin: 0;
+}
+
+.banner__logo {
+	height: 72px;
+}
+
+.banner__logo a {
+	display: block;
+	width: 145px;
+	padding: 16px 0 18px;
+}
+
+.banner__title {
+	background: #373737;
+}
+
+.ual-footer {
+	min-height: 72px;
+	padding: 14px 0;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.ual-footer a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.ual-footer p {
+	margin-bottom: 12px;
+}
+
+.ual-footer a:hover {
+	text-decoration: underline;
+}
+
+.copyright {
+	width: 50%;
+	float: left;
+}
+
+.footer-links {
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+
+.footer-links ul li {
+	display: inline;
+	margin-left: 12px;
+}
+
+@media (max-width: 600px) {
+	.copyright, .footer-links {
+		float: none;
+		width: 100%;
+		text-align: left;
+	}
+
+	.footer-links ul li {
+		margin: 0 12px 0 0;
+	}
+}
+
+/* Suggested Horizontal Menu */
+.horizontal-menu {
+	background: #E9E9E9;
+}
+
+.horizontal-menu ul {
+	border-left: 1px solid #FFFFFF;
+}
+
+.horizontal-menu ul li {
+	display: inline-block;
+	border-right: 1px solid #FFFFFF;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.horizontal-menu a {
+	display: block;
+	padding: 7px 14px 8px;
+	color: #000000;
+	text-decoration: none;
+}

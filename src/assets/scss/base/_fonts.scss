@@ -1,0 +1,29 @@
+// =============================================================================
+//  FONTS
+// =============================================================================
+
+// Generate @font-face declarations for a list of fonts
+
+// relative path to fonts
+$font-path: '../fonts/';
+// the name that will be used in font-family property and it's file name
+$font-families: (
+	
+	'Swiss-Light': '2FA70A_0_0',
+	'Swiss-Roman': '2FA70A_1_0',
+	'Swiss-Italic': '2FA70A_2_0',
+	'Swiss-Bold': '2FA70A_3_0',
+	'Swiss-Black': '2FA70A_4_0',
+	'BrandonText-Bold': '2FA70A_5_0',
+	'Goth': '2FA70A_6_0' 
+);
+
+//  font-family: "Bureau Grot";
+
+
+// Let's do the loop!
+@each $ff-name, $ff-file in $font-families {
+
+	@include font-face($ff-name, $font-path + $ff-file, $file-formats: eot woff ttf svg);
+
+}

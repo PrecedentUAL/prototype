@@ -1,0 +1,68 @@
+// =============================================================================
+//  HEROS
+// =============================================================================
+
+.hero-wrap {
+	min-height: 519px;
+	width: 100%; 
+    position: relative; 
+    height: auto;
+
+    .hero-master & {
+    	max-width: 1440px;
+    	margin: auto;
+    }
+}
+
+.hero-img {
+	position: absolute;
+	background-image: url(../img/hero-home.jpg);
+	background-size: cover;
+	margin: auto;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    color: transparent;
+    z-index: 0;
+    height: 100%;
+    width: 100%; 
+    z-index: -1;
+}
+
+.hero {
+	z-index: 3;
+	width: 100%;
+    margin: auto;  
+    width: 100%;
+	@include vertical-align;
+	position: absolute;
+	 
+
+	.hero-title {
+		font-family: $font-bold;
+		color: white;
+		text-align: center;
+		text-transform: lowercase;
+		color: white;
+		font-size: rem(30);
+		@include media($small) {
+			 font-size: rem(60);
+		}
+	}
+}
+
+.button-container {
+	position: absolute;
+	bottom: 52px;
+	width: 100%;
+
+	a.button:nth-child(1) {
+		margin-bottom: rem(10);
+		@include media($small) {
+			 margin-bottom: rem(0)
+		}
+	}
+
+}
+
+ 

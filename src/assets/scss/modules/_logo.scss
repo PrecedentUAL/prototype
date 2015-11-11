@@ -1,0 +1,20 @@
+// =============================================================================
+//  LOGO
+// =============================================================================
+
+.logo {
+	width: rem(100);
+	position: fixed;
+	left: rem(15);
+	top: rem(12);
+	z-index: 11;
+	@include transition(opacity 0.5s ease-in-out);
+	opacity: 1.0;
+	line-height: 0;
+
+
+
+	@include media($small) {
+		left: $sides-spacing;
+	}
+}

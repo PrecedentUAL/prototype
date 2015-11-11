@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://www.samsung.com/global/seriftv/uk/</loc>
+    <xhtml:link rel="alternate" href="https://www.samsung.com/global/seriftv/global/" hreflang="en-US" />
+    <xhtml:link rel="alternate" href="https://www.samsung.com/global/seriftv/fr/" hreflang="fr-FR" />
+    <xhtml:link rel="alternate" href="https://www.samsung.com/global/seriftv/dk/" hreflang="da-DK" />
+    <xhtml:link rel="alternate" href="https://www.samsung.com/global/seriftv/se/" hreflang="sv-SE" />
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.samsung.com/global/seriftv/uk/design.html</loc>
+    <xhtml:link rel="alternate" href="https://www.samsung.com/global/seriftv/global/design.html" hreflang="en-US" />
+    <xhtml:link rel="alternate" href="https://www.samsung.com/global/seriftv/fr/design.html" hreflang="fr-FR" />
+    <xhtml:link rel="alternate" href="https://www.samsung.com/global/seriftv/dk/design.html" hreflang="da-DK" />
+    <xhtml:link rel="alternate" href="https://www.samsung.com/global/seriftv/se/design.html" hreflang="sv-SE" />
+     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.samsung.com/global/seriftv/uk/lifestyle.html</loc>
+    <xhtml:link rel="alternate" href="https://www.samsung.com/global/seriftv/global/lifestyle.html" hreflang="en-US" />
+    <xhtml:link rel="alternate" href="https://www.samsung.com/global/seriftv/fr/lifestyle.html" hreflang="fr-FR" />
+    <xhtml:link rel="alternate" href="https://www.samsung.com/global/seriftv/dk/lifestyle.html" hreflang="da-DK" />
+    <xhtml:link rel="alternate" href="https://www.samsung.com/global/seriftv/se/lifestyle.html" hreflang="sv-SE" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.samsung.com/global/seriftv/uk/craft.html</loc>
+    <xhtml:link rel="alternate" href="https://www.samsung.com/global/seriftv/global/craft.html" hreflang="en-US" />
+    <xhtml:link rel="alternate" href="https://www.samsung.com/global/seriftv/fr/craft.html" hreflang="fr-FR" />
+    <xhtml:link rel="alternate" href="https://www.samsung.com/global/seriftv/dk/craft.html" hreflang="da-DK" />
+    <xhtml:link rel="alternate" href="https://www.samsung.com/global/seriftv/se/craft.html" hreflang="sv-SE" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.samsung.com/global/seriftv/uk/signup.html</loc>
+    <xhtml:link rel="alternate" href="https://www.samsung.com/global/seriftv/global/signup.html" hreflang="en-US" />
+    <xhtml:link rel="alternate" href="https://www.samsung.com/global/seriftv/fr/signup.html" hreflang="fr-FR" />
+    <xhtml:link rel="alternate" href="https://www.samsung.com/global/seriftv/dk/signup.html" hreflang="da-DK" />
+    <xhtml:link rel="alternate" href="https://www.samsung.com/global/seriftv/se/signup.html" hreflang="sv-SE" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.samsung.com/global/seriftv/uk/buy.html</loc>
+    <priority>0.7</priority>
+  </url>
+</urlset>

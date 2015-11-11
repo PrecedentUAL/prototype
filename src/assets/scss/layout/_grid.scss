@@ -1,0 +1,141 @@
+// =============================================================================
+//	GRID
+// =============================================================================
+
+.grid-wrap {
+	@include clearfix;
+	position: relative;
+}
+
+.grid-item {
+	position: relative;
+	@extend %col-12;
+	@extend %col-6-small;
+
+	@media only screen and (orientation : landscape) {
+		.touch & {
+			@extend %col-6;
+		}
+	}
+	@media only screen and (orientation : portrait) {
+		.touch & {
+			@media screen and (max-width: $small-screen) {
+				width: 100%;
+			}
+		}
+	}
+
+	&.grid-full {
+		@extend %col-12;
+		@extend %col-12-small-only;
+		@extend %col-12-medium;
+		@media only screen and (orientation : landscape) {
+			.touch & {
+				@extend %col-12;
+				@extend %col-12-small-only;
+				@extend %col-12-medium;
+			}
+		}
+	}
+
+	&.grid-4 {
+		@extend %col-12;
+		@extend %col-12-small-only;
+		@extend %col-6-medium;
+		@extend %col-3-large;
+	}
+
+	&.grid-4-tablet {
+		@extend %col-12;
+		@extend %col-3-small;
+		@media only screen and (orientation : landscape) {
+			.touch & {
+				@extend %col-12;
+				@extend %col-3-small;
+			}
+		}
+		@media only screen and (orientation : portrait) {
+			.touch & {
+				@media screen and (max-width: $small-screen) {
+					@extend %col-12;
+					@extend %col-3-small;
+				}
+			}
+		}
+
+	}
+	&.grid-full,
+	&.left,
+	&.right {
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	&.left {
+		img {
+			@include media($small) {
+				float: left;
+				padding-right: rem(10);
+			}
+			@media only screen and (orientation : landscape) {
+				.touch & {
+					float: left;
+					padding-right: rem(10);
+				}
+			}
+		}
+	}
+	&.right {
+		img {
+			padding-top: rem(10);
+
+			@include media($small) {
+				float: right;
+				padding-left: rem(10);
+				padding-top: inherit;
+			}
+			@media only screen and (orientation : landscape) {
+				.touch & {
+					float: right;
+					padding-left: rem(10);
+					padding-top: inherit;
+				}
+			}
+		}
+	}
+
+	&.v-center-right,
+	&.v-center-left {
+		position: static;
+
+		@include media($small) {
+			@include vertical-align;
+			position: absolute;
+		}
+		@media only screen and (orientation : landscape) {
+			.touch & {
+				@include vertical-align;
+				position: absolute;
+			}
+		}
+	}
+	&.v-center-right {
+		right: 0;
+	}
+	&.v-center-left {
+		left: 0;
+	}
+}
+
+.grid-wrap.padding {
+	margin-left: rem(-10);
+	margin-right: rem(-10);
+
+	.grid-item {
+		padding-left: rem(10);
+		padding-right: rem(10);
+    	font-size: rem(18);
+	}
+}

@@ -1,0 +1,251 @@
+// =============================================================================
+//  SPECS LIST
+// =============================================================================
+.rel {
+	position: relative;
+}
+
+.grid-spec-img {
+	position: relative;
+}
+.spec-img-hotspots {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	span {
+		height: 100%;
+		display: inline-block;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		&:nth-child(1) {
+			width: 34%;
+		}
+		&:nth-child(2) {
+			width: 30%;
+		}
+		&:nth-child(3) {
+			width: 30%;
+		}
+	}
+}
+
+.spec-list {
+	margin-bottom: rem(48);
+	li {
+		display: table;
+		width: 100%;
+		padding: 0 rem(5);
+		font-size: rem(15.5);
+		line-height: 1.3;
+		font-family: $base-font-family;
+		height: rem(50);
+		border-bottom: 1px solid black;
+		@include media($xsmall-only) {
+			font-size: rem(15);
+		}
+		.align {
+			display: table-cell;
+			vertical-align: middle;
+			padding-top: rem(3);
+		}
+
+		&:first-child {
+			border-top: 1px solid black;
+		}
+
+		.inline-title {
+			display: inline-block;
+			width: 44%;
+			margin-right: 3%;
+			@include media($small) {
+				display: none;
+			}
+		}
+		.spec-value {
+			margin-left: 3%;
+			@include media($small) {
+				margin-left: rem(0);
+			}
+		}
+	}
+
+	&.spec-titles-list {
+		display: none;
+		@include media($small) {
+			display: block;
+		}
+	}
+	&.spec-titles-list-hidden {
+		@include media($small) {
+			display: none;
+		}
+	}
+}
+.inline-title,
+.spec-titles,
+.spec-titles-list {
+	text-transform: uppercase;
+}
+
+.tv-title-inline {
+	text-align: center;
+	font-size: rem(18);
+	@include media($small) {
+		font-size: rem(15.5);
+		text-align: left;
+	}
+}
+
+#toggle-specs {
+	.less {
+		display: none;
+	}
+}
+
+
+.spec-list-hidden,
+.spec-titles-list-hidden {
+	display: none;
+	margin-top: rem(-48);
+
+	&.spec-titles-list {
+		display: none;
+	}
+
+	li {
+		&:first-child {
+			border-top: none;
+		}
+	}
+}
+
+.grid-wrap-specs {
+	position: relative;
+
+	.grid-4-tablet {
+		@include transition(opacity 0.5s ease-in-out);
+		background-color: white;
+		position: absolute;
+		top: rem(15);
+		top: 0;
+		left: 0;
+		opacity: 0;
+
+		@include media($small) {
+			position: static;
+			opacity: 1;
+		}
+
+		&.current {
+			z-index: 1;
+			opacity: 1;
+			position: relative;
+		}
+	}
+}
+
+
+.spec-nav {
+	height: rem(15);
+	position: relative;
+	span {
+		display: inline-block;
+		@include arrow-up(rem(9), rem(15), black);
+		@include transition(all 0.5s ease-in-out);
+		position: relative;
+		top: 0;
+		left: 22%;
+
+		&[data-nav="1"] {
+			left: 23.1%;
+			left: calc(23% - 6px);
+		}
+		&[data-nav="2"] {
+			left: 55.1%;
+			left: calc(55% - 6px);
+		}
+		&[data-nav="3"] {
+			left: 82.1%;
+			left: calc(82% - 6px);
+		}
+	}
+	@include media($small) {
+		display: none;
+	}
+}
+
+
+// buy for uk, fr, se - remove class for all
+.locale-uk,
+.locale-fr,
+.locale-se {
+
+	li.no-border {
+		border: 0;
+		padding: 0;
+		margin: 0 0.4167rem;
+		@include media($small)  {
+			margin-left: inherit;
+			margin-right: inherit;
+		}
+	}
+	.spec-list a.button {
+		font-size: rem(15.5);
+		padding: 0.5rem 0rem 0.6rem;
+		text-align: center;
+		margin-top: 1.4rem;
+		margin-right: 0.82rem;
+		display: block;
+
+		@include media($small)  {
+			margin-right: inherit;
+		}
+	}
+
+	.grid-item {
+
+		.no-border .align {
+			margin-top: 1rem;
+			display: block;
+
+			@include media($small)  {
+				display: none;
+				margin-top: inherit;
+
+			}
+
+			.inline-title {
+				padding: 2rem 0.4167rem 0 0;
+				display: block;
+
+	     		@include media($small)  {
+					padding: inherit;
+					height: inherit;
+					display: inherit;
+	     		}
+     		}
+ 		}
+
+ 		.spec-titles-list .no-border .align {
+
+			display: none;
+
+			@include media($small)  {
+				display: block;
+				padding: 1rem 0.4167rem 0;
+			}
+
+		}
+
+		.spec-list .buy-title {
+			.inline-title {
+				width: 100%;
+				@include media($small)  {
+					width: inherit;
+	     		}
+			}
+		}
+	}
+}

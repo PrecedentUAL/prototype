@@ -1,0 +1,54 @@
+// ==================================================
+// GRID HELPERS
+// ==================================================
+// Create placeholders for all used grid mixins
+
+$columns: (
+	12: (
+		'small-only': $small-only,
+		'small': $small,
+		'medium': $medium,
+	),
+	9: (
+		'large': $large,
+	),
+	8: (
+		'small-only': $small-only,
+		'small': $small,
+		'medium': $medium,
+	),
+	6: (
+		'small-only': $small-only,
+		'small': $small,
+		'medium': $medium,
+	),
+	4: (
+		'small': $small,
+		'medium': $medium,
+		'medium-only': $medium-only,
+	),
+	3: (
+		'small': $small,
+		'medium': $medium,
+		'large': $large,
+	)
+);
+
+@mixin mq-col($col, $val) {
+	@include media($val) {
+		@include span-columns($col);
+	}
+}
+
+
+@each $column, $map in $columns {
+	%col-#{$column} {
+		@include span-columns($column);
+	}
+
+	@each $name, $value in $map {
+		%col-#{$column}-#{$name} {
+			@include mq-col($column, $value);
+		}
+	}
+}

@@ -1,0 +1,111 @@
+
+<!-- META tags -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no">
+<!--[if lt IE 9]><meta http-equiv="refresh" content="0;url=/"><![endif]-->
+{{#is page.basename "index"}}
+	<meta name="description" content="{{ uk.index.metadata.description }}" />
+	<meta name="keywords" content="{{ uk.index.metadata.keywords }}" />
+{{/is }}
+{{#is page.basename "design"}}
+	<meta name="description" content="{{ uk.design.metadata.description }}" />
+	<meta name="keywords" content="{{ uk.design.metadata.keywords }}" />
+{{/is }}
+{{#is page.basename "lifestyle"}}
+	<meta name="description" content="{{ uk.lifestyle.metadata.description }}" />
+	<meta name="keywords" content="{{ uk.lifestyle.metadata.keywords }}" />
+{{/is }}
+{{#is page.basename "craft"}}
+	<meta name="description" content="{{ uk.craft.metadata.description }}" />
+	<meta name="keywords" content="{{ uk.craft.metadata.keywords }}" />
+{{/is }}
+{{#is page.basename "buy"}}
+	<meta name="description" content="{{ uk.buy.metadata.description }}" />
+	<meta name="keywords" content="{{ uk.buy.metadata.keywords }}" />
+{{/is }}
+{{#is page.basename "signup"}}
+	<meta name="description" content="{{{ uk.signup.metadata.description }}}" />
+	<meta name="keywords" content="{{ uk.signup.metadata.keywords }}" />
+{{/is }}
+
+<!-- Facebook OG tags -->
+<meta property="og:title" content="{{#is page.basename "index" }}{{else}}{{page.basename}} - {{/is}}{{ uk.title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://" />
+<meta property="og:site_name" content="{{ uk.title }}" />
+{{#is page.basename "index"}}
+	<meta property="og:description" content="{{ uk.index.metadata.description }}" />
+{{/is }}
+{{#is page.basename "design"}}
+	<meta property="og:description" content="{{ uk.design.metadata.description }}" />
+{{/is }}
+{{#is page.basename "lifestyle"}}
+	<meta property="og:description" content="{{ uk.lifestyle.metadata.description }}" />
+{{/is }}
+{{#is page.basename "craft"}}
+	<meta property="og:description" content="{{ uk.craft.metadata.description }}" />
+{{/is }}
+{{#is page.basename "buy"}}
+	<meta property="og:description" content="{{ uk.buy.metadata.description }}" />
+{{/is }}
+{{#is page.basename "signup"}}
+	<meta property="og:description" content="{{{ uk.signup.metadata.description }}}" />
+{{/is }}
+
+<!-- TWITTER tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+<meta name="twitter:title" content="{{#is page.basename "index" }}{{else}}{{page.basename}} - {{/is}}{{ uk.title }}">
+<meta name="twitter:image" content="https://">
+{{#is page.basename "index"}}
+	<meta name="twitter:description" content="{{ uk.index.metadata.description }}" />
+{{/is }}
+{{#is page.basename "design"}}
+	<meta name="twitter:description" content="{{ uk.design.metadata.description }}" />
+{{/is }}
+{{#is page.basename "lifestyle"}}
+	<meta name="twitter:description" content="{{ uk.lifestyle.metadata.description }}" />
+{{/is }}
+{{#is page.basename "craft"}}
+	<meta name="twitter:description" content="{{ uk.craft.metadata.description }}" />
+{{/is }}
+{{#is page.basename "buy"}}
+	<meta name="twitter:description" content="{{ uk.buy.metadata.description }}" />
+{{/is }}
+{{#is page.basename "signup"}}
+	<meta name="twitter:description" content="{{{ uk.signup.metadata.description }}}" />
+{{/is }}
+
+
+
+<!-- Schema.org and Pinterest tags -->
+<meta itemprop="name" content="{{#is page.basename "index" }}{{else}}{{page.basename}} - {{/is}}{{ uk.title }}" />
+<meta itemprop="image" content="https://" />
+{{#is page.basename "index"}}
+	<meta itemprop="description" content="{{ uk.index.metadata.description }}" />
+	<meta itemprop="keywords" content="{{ uk.index.metadata.keywords }}" />
+{{/is }}
+{{#is page.basename "design"}}
+	<meta itemprop="description" content="{{ uk.design.metadata.description }}" />
+	<meta itemprop="keywords" content="{{ uk.design.metadata.keywords }}" />
+{{/is }}
+{{#is page.basename "lifestyle"}}
+	<meta itemprop="description" content="{{ uk.lifestyle.metadata.description }}" />
+	<meta itemprop="keywords" content="{{ uk.lifestyle.metadata.keywords }}" />
+{{/is }}
+{{#is page.basename "craft"}}
+	<meta itemprop="description" content="{{ uk.craft.metadata.description }}" />
+	<meta itemprop="keywords" content="{{ uk.craft.metadata.keywords }}" />
+{{/is }}
+{{#is page.basename "buy"}}
+	<meta itemprop="description" content="{{ uk.buy.metadata.description }}" />
+	<meta itemprop="keywords" content="{{ uk.buy.metadata.keywords }}" />
+{{/is }}
+{{#is page.basename "signup"}}
+	<meta itemprop="description" content="{{{ uk.signup.metadata.description }}}" />
+	<meta itemprop="keywords" content="{{ uk.signup.metadata.keywords }}" />
+{{/is }}
+
+<!-- Page Title -->
+<title>{{ uk.title }}{{#is page.basename "index" }}{{else}} - {{page.basename}}{{/is}}</title>

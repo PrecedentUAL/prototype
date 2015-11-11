@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-GB"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en-GB"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en-GB"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-GB" itemscope itemtype="http://schema.org/WebPage"> <!--<![endif]-->
+<head>
+	  
+	<link href="../assets/css/app.css" rel="stylesheet">
+	<script src="../assets/js/vendor/modernizr.js"></script>
+	 {{#is page.basename "lifestyle" }}
+		 
+	{{/is}}
+ 
+</head>
+
+<body id="{{page.basename}}">
+ 
+ 
+
+	<div class="site-wrapper">
+		<div class="wrapper">
+
+		{{!-- Global header --}}
+		{{> header }}
+
+		{{!-- Page content --}}
+		{{> body }}
+
+		{{!-- global footer --}}
+		{{> footer }}
+
+		</div>
+	</div>
+
+	<!--[if gt IE 8]><!-->
+	<script src="../assets/js/vendor.js"></script>
+	<script src="../assets/js/app.js"></script>
+	<!--<![endif]--> 
+</body>
+</html>

@@ -1,0 +1,196 @@
+// =============================================================================
+//	CUSTOM GRID
+// =============================================================================
+
+.custom-grid-wrap {
+	position: relative;
+
+	@include media($medium) {
+		.row-side-shot & {
+			height: rem(430);
+			.grid-text {
+				height: rem(430);
+			}
+		}
+		.row-with-legs & {
+			height: rem(530);
+			.grid-text {
+				height: rem(430);
+			}
+		}
+		.row-remote & {
+			height: rem(385);
+			.grid-text {
+				height: rem(300);
+			}
+		}
+	}
+
+	.grid-img {
+		img {
+			@extend .center;
+			@include media($small-only) {
+				height: auto;
+			}
+		}
+		&.left {
+			@include media($medium) {
+				float: left;
+			}
+			@media only screen and (orientation : landscape) {
+				.touch & {
+					float: left;
+				}
+			}
+		}
+		&.right {
+			@include media($medium) {
+				float: right;
+			}
+			@media only screen and (orientation : landscape) {
+				.touch & {
+					float: right;
+				}
+			}
+		}
+		&.custom-withlegs {
+			overflow: hidden;
+			img {
+				position: relative;
+				right: rem(-20);
+				width: 100%;
+				max-width: rem(385);
+
+				@media only screen and (orientation : landscape) {
+					.touch & {
+						right: rem(-30);
+					}
+				}
+			}
+		}
+		&.custom-sideshot,
+		&.custom-remote {
+			img {
+				width: 100%;
+				max-width: rem(487);
+			}
+		}
+	}
+	.grid-text {
+		width: 100%;
+
+		@include media($medium) {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.imgs-caption {
+			margin: rem(72) auto rem(120) auto;
+
+			@include media($medium) {
+				margin: 0 auto;
+				@include vertical-align;
+			}
+		}
+
+		@include media($medium) {
+			&.right {
+				padding-left: rem(340);
+			}
+			&.left {
+				padding-right: rem(340);
+			}
+		}
+	}
+}
+
+
+// If landsacpe touch and small screens
+@media only screen and (orientation : landscape) {
+	@media screen and (max-width: 816px) {
+
+		.touch & {
+			.custom-grid-wrap {
+
+				.custom-withlegs {
+					img {
+						width: 100%;
+						max-width: rem(215);
+						position: relative;
+						right: rem(-10);
+					}
+				}
+				.custom-sideshot,
+				.custom-remote {
+					img {
+						width: 100%;
+						max-width: rem(287);
+						position: relative;
+						left: rem(-50);
+						// mobile
+						@media screen and (max-width: 500px) {
+							left: rem(-70);
+						}
+					}
+				}
+
+				.grid-text {
+					position: absolute;
+					top: 0;
+					left: 0;
+
+					.imgs-caption {
+						margin: 0 auto;
+						@include vertical-align;
+
+						&.side-shot-caption,
+						&.with-legs-caption,
+						&.design-video-caption {
+							max-width: rem(310);
+							@include media($small) {
+								max-width: rem(370);
+							}
+						}
+					}
+
+					&.right {
+						padding-right: rem(20);
+						padding-left: rem(180);
+						// mobile
+						@media screen and (max-width: 500px) {
+							padding-left: rem(150);
+						}
+					}
+					&.left {
+						padding-right: rem(200);
+						padding-left: rem(10);
+						// mobile
+						@media screen and (max-width: 500px) {
+							padding-right: rem(180);
+						}
+					}
+				}
+			}
+
+			.row-side-shot {
+				height: rem(254);
+				.grid-text {
+					height: rem(254);
+				}
+			}
+			.row-with-legs {
+				height: rem(300);
+				.grid-text {
+					height: rem(250);
+				}
+			}
+			.row-remote {
+				height: rem(230);
+				.grid-text {
+					height: rem(230);
+				}
+			}
+		}
+	}
+}

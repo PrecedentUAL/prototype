@@ -1,0 +1,50 @@
+// =============================================================================
+//	GLOABAL LAYOUT STUFF
+// =============================================================================
+
+body {
+	overflow-x: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+html,
+body,
+.site-wrapper {
+	height: 100%;
+}
+
+body.overflow-hide {
+	overflow: hidden;
+}
+
+
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: rem(1000);
+	padding: 0 $sides-spacing-mobile;
+
+	@include media($small) {
+		padding: 0 $sides-spacing;
+	}
+}
+
+.container-full {
+	width: 100%;
+	img {
+		width: 100%;
+	}
+}
+
+.v-center {
+	@include vertical-align;
+}
+
+.left {
+	float: left; 
+}
+
+.right {
+	float: left; 
+}

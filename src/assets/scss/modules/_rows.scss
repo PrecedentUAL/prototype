@@ -1,0 +1,10 @@
+
+.row {
+	width: 100%; 
+	margin: rem(20) auto rem(20) auto;
+	text-align: center;
+	 
+	@include media($small) {
+		margin: rem(40) auto rem(40) auto;
+	}
+}

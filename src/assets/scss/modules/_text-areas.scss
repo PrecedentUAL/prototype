@@ -1,0 +1,107 @@
+// =============================================================================
+//  TEXT AREAS
+// =============================================================================
+
+// Page intros
+.page-intro-text {
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: rem(24);
+	font-family: $heading-font-family;
+	line-height: $heading-line-height;
+	@include media($small) {
+		font-size: rem(36);
+		width: 100%;
+	}
+}
+.page-intro-author {
+	font-family: $base-font-family;
+	margin-top: rem(20);
+	color: $light-font-color;
+}
+
+
+// Image captions
+.imgs-caption {
+	width: 100%;
+	max-width: rem(440);
+	margin: rem(72) auto rem(96) auto;
+	text-align: center;
+
+	// Design page
+	&.explore-3d-caption {
+		margin-top: rem(-10);
+		margin-bottom: 0;
+	}
+	&.serif-360-caption {
+		max-width: rem(350);
+		position: relative;
+		z-index: 1;
+		height: rem(50);
+	    margin: rem(72) auto rem(144) auto;
+	}
+	&.design-video-caption {
+		max-width: rem(600);
+	}
+
+	// Style page
+	&.self-standing-caption {
+		max-width: rem(380);
+	}
+	&.put-anywhere-caption {
+		max-width: rem(440);
+	}
+	&.serif-front-caption {
+		max-width: rem(400);
+	}
+	.row-self-standing & {
+		@include media($small) {
+			margin: 0 auto;
+      padding: 0 rem(36);
+		}
+	}
+	.row-serif-front & {
+		margin-bottom: rem(-12);
+	}
+
+	// Craft page
+	&.brothers-caption {
+		@include media($small) {
+			margin-bottom: rem(72);
+      padding: 0 rem(6);
+		}
+		@include media($medium) {
+      padding: 0 rem(36);
+    }
+    .text-link {
+      margin-top: 0;
+  		@include media($medium) {
+        margin-top: rem(24);
+      }
+    }
+	}
+	&.sketches-caption {
+		max-width: rem(410);
+	}
+	&.deconstructed-caption {
+		max-width: rem(440);
+	}
+}
+.img-caption-text {
+	font-family: $base-font-family;
+	padding: 0 rem(5);
+}
+
+
+.text-link {
+	display: inline-block;
+	margin-top: 50px;
+	color: black;
+	font-size: rem(18);
+	border-bottom: 1px solid black;
+
+	p & {
+		margin-top: 45px;
+	}
+}

@@ -1,0 +1,26 @@
+// =============================================================================
+//  NO JS
+// =============================================================================
+
+.nojs-msg {
+	display: none;
+	margin-top: 20px;
+}
+
+.no-js #home {
+	.nojs-msg  {
+		display: block;
+	}
+	.video-trigger,
+	.text-link,
+	.arrows-nav,
+	.home-back {
+		display: none;
+	}
+}
+
+.lt-ie9 {
+	.home-menu {
+		display: none;
+	}
+}
