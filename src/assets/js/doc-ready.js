@@ -17,7 +17,7 @@ $(function() {
 
 	// Add functions here
 	
-	init.accessibility;
+	toggleMenu.init(); // toggleMenu.js
 
 });
 

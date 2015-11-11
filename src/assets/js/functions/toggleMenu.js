@@ -1,23 +1,21 @@
 var toggleMenu = {
 
 	elms: {
-		menuOpen: $('#trigger-menu-open'),
+		menuOpen: $('#trigger-menu-colleges'),
 		menuClose: $('#trigger-menu-close'),
-		globalMenu: $('#global-menu'),
-		pageOverlays: $('.page-overlay'),
-		body: $('body'),
-		buyNav: $('#buy-nav')
+		collegeMenu: $('#college-menu'),
+		body: $('body')
 	},
 
 	openMenu: function( e ) {
 		e.preventDefault();
-		toggleMenu.elms.globalMenu.fadeIn(600);
+		toggleMenu.elms.collegeMenu.fadeIn(600);
 		toggleMenu.elms.body.addClass('overflow-hide');
 	},
 
 	closeMenu: function( e ) {
 		e.preventDefault();
-		toggleMenu.elms.globalMenu.fadeOut(600);
+		toggleMenu.elms.collegeMenu.fadeOut(600);
 		toggleMenu.elms.body.removeClass('overflow-hide');
 	},
 
@@ -27,10 +25,7 @@ var toggleMenu = {
 		});
 		toggleMenu.elms.menuClose.on('click touch', function( e ) {
 			toggleMenu.closeMenu(e);
-		});
-		toggleMenu.elms.buyNav.on('click touch', function( e ) {
-			toggleMenu.closeMenu(e);
-		});
+		}); 
 	},
 
 	init: function() {

@@ -103,10 +103,13 @@
 			margin-top: 3%;
 			padding-left: rem(15);
 			@include media($small) {
-				width: 25%;
+				width: 17%;
 				margin-left: 1%;
 				margin-top: inherit;
 				padding-left: rem(20);
+			}
+			@include media($medium) {
+				width: 26%;
 			}
 
 			option {
