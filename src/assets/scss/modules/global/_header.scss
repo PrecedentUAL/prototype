@@ -4,49 +4,118 @@
 
 .global-header {
 	width: 100%;
-	height: 70px;
 	background-color: black;
+	height: 45px;
+	@include media($medium) { 
+		height: 70px;
+	}
 
 	.wrapper {
-		height: 100%; 
+		height: 100%;
+		width: 100%; 
+		@include media($medium) { 
+			width: inherit;
+		}
 	}
 
 	nav { 
 		height: 100%;
 		width: 100%;
 
-		.logo {
-			float: left; 
-			margin-top: rem(15);
+		.nav-mobile {
+			background: transparent url(../img/icon-burger.png) no-repeat;
+			display: inline-block;
+			width: 45px;
+			height: 45px;
+			float: left;
+			@include media($medium) { 
+				display: none;
+			}
 		}
+
+		
+
+
+		.logo-desktop {
+			float: left; 
+			margin-top: rem(10);
+			display: none;
+    		@include media($medium) { 
+				display: block;
+				margin-top: rem(15);
+			}
+		}
+
+		.logo-mobile {
+			
+			display: inline-block;
+			margin-top: rem(11);
+			margin-left: rem(14);
+    		@include media($medium) { 
+				float: left; 
+				margin-top: rem(10);
+				display: none;
+			}
+		}
+
+
 
 		ul {
 			float: right; 
 			height: 100%; 
 			margin-left: rem(20);
+
+			
+			
 			li {
 				display: block;
 				float: left;
 				padding: auto rem(20) auto 0;
 				height: 100%;
 
+				&.hidden-desktop {
+					display: none;
+					@include media($medium) { 
+						display: inline-block;
+					}
+				}
+
 				a {
 					color: white;
-					font-size: rem(14);
+					font-size: rem(12);
 					height: 100%;
 					display: block;
-					padding-top: rem(22);
+					padding-top: rem(14);
 					padding-right: rem(12);
 					padding-left: rem(12);
-					font-family: 'Swiss-Roman'; 
+					font-family: 'Swiss-Roman';
+
+					@include media($medium) { 
+						padding-top: rem(22);
+						font-size: rem(14);
+					}
+
 
 					&.mega {
 						text-transform: uppercase;
 						border-left: 1px solid #373737;
+
+						&.nav-courses {
+							border-left: 0;  
+						
+							@include media($medium) {
+								border-left: 1px solid #373737;
+							}
+						}
 					}
 
 					&.search {
-						border-right: 1px solid #373737; 
+						
+						display: none;
+						@include media($medium) { 
+							display: inline-block;
+							border-right: 1px solid #373737; 
+						}
 						span {
 							background: transparent url(../img/icon-search.png) no-repeat;
 							display: inline-block;

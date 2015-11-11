@@ -28,11 +28,11 @@ h4,
 h5,
 h6 {
 	@include margin(0 0 $small-spacing);
-	font-family: $font-light;
+	font-family: $font-bold;
 	font-size: $base-font-size;
 	font-weight: initial;
-	line-height: $heading-line-height;
-	letter-spacing: 0.2rem;
+	line-height: $heading-line-height; 
+	font-color: $black;
 
 	a {
 		color: inherit;

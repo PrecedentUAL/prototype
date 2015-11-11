@@ -27,6 +27,10 @@
     height: 100%;
     width: 100%; 
     z-index: -1;
+    background-position-x: 40%;
+    @include media($small) {
+		 background-position-x: inherit;
+	}
 }
 
 .hero {
@@ -44,7 +48,7 @@
 		text-align: center;
 		text-transform: lowercase;
 		color: white;
-		font-size: rem(30);
+		font-size: rem(40);
 		@include media($small) {
 			 font-size: rem(60);
 		}
