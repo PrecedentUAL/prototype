@@ -17,7 +17,8 @@ $(function() {
 
 	// Add functions here
 	
-	toggleMenu.init(); // toggleMenu.js
+	collegeMenu.init(); // collegeMenu.js
+	searchMenu.init(); // searchMenu.js
 
 });
 

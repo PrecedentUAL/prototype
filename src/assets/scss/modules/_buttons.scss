@@ -8,11 +8,16 @@
 	padding: rem(10) rem(20);
 	opacity: 1;
 	display: inline-block;
-	font-size: rem(16);
+	font-size: rem(17);
+	font-family: $font-bold;
 	margin-right: 10px;
 
 	&:hover {
 		opacity: 1;
 	}
 
+	.global-menu & {
+		background-color: $white;
+		color: $black; 
+	}
 }

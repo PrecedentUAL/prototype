@@ -49,12 +49,10 @@
 }
 
 .college-menu {
-	height: 490px;
-	@include media($small) {
-		height: 598px;
-	}
+ 	height: 100%;
 
 	.menu-content {
+		height: 100%;
 		a {
 			float: left;
 			width: 100%;
@@ -73,7 +71,7 @@
 
 			@include media($small) {
 				width: 33.3333%;
-				height: 264px;
+				height: 50%;
 				font-size: rem(16);
 
 			}
@@ -144,3 +142,33 @@
 	}
 }
  
+
+.search-menu {
+	height: 490px;
+	@include media($small) {
+		height: 287px;
+	}
+
+	.menu-content {
+		margin: auto;
+		text-align: center;
+		margin-top: rem(60);
+		input {
+			height: 40px;
+			color: white;
+			background: transparent;
+			border: 0;
+			border-bottom: 2px solid white;
+			width: 100%;
+			padding-left: rem(20);
+			@include media($small) {
+				width: 60%;
+			}
+		}
+
+		::-webkit-input-placeholder { color: white; opacity: 1 !important; font-size: rem(17); }
+		:-moz-placeholder { color: white; font-size: rem(17);}
+		::-moz-placeholder {color: white; font-size: rem(17);}
+		:-ms-input-placeholder {color: white; font-size: rem(17);}
+	}
+}

@@ -17,7 +17,7 @@ var touchScenario = {
 			e.preventDefault();
 			$('body').find('.arrows-nav-mobile').fadeIn(1000);
 			$('body').removeClass('accessibility-mode');
-			toggleMenu.openMenu(e);
+			//collegeMenu.openMenu(e);
 		});
 	},
 
