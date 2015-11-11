@@ -2,7 +2,7 @@ var collegeMenu = {
 
 	elms: {
 		menuOpen: $('#trigger-menu-colleges'),
-		menuClose: $('#trigger-menu-close'),
+		menuClose: $('#college-menu-close'),
 		actualMenu: $('#college-menu'),
 		body: $('body')
 	},

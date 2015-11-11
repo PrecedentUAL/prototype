@@ -111,9 +111,9 @@
 
 					&.search {
 						
-						display: none;
-						@include media($medium) { 
-							display: inline-block;
+						 
+						@include media($small) { 
+							 
 							border-right: 1px solid #373737; 
 						}
 						span {

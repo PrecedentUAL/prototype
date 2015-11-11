@@ -19,6 +19,7 @@ $(function() {
 	
 	collegeMenu.init(); // collegeMenu.js
 	searchMenu.init(); // searchMenu.js
+	courseMenu.init(); // searchMenu.js
 
 });
 

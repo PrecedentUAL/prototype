@@ -120,7 +120,7 @@
 			    z-index: 1;
 			    background-repeat: no-repeat; 
 				background-size: cover;
-				@include transition(opacity 0.2s ease-in-out);
+				@include transition(opacity 0.3s ease-in-out);
 			}
 
 			&:hover:after {
@@ -144,7 +144,7 @@
  
 
 .search-menu {
-	height: 490px;
+	height: 287px;
 	@include media($small) {
 		height: 287px;
 	}
@@ -159,16 +159,115 @@
 			background: transparent;
 			border: 0;
 			border-bottom: 2px solid white;
-			width: 100%;
+			width: 80%;
 			padding-left: rem(20);
+			transition: border 0.3s;
+			font-size: rem(17);
+			margin: 0 rem(20) rem(20) rem(20);
+
 			@include media($small) {
 				width: 60%;
+				margin: inherit;
 			}
+			&:focus,
+			&.focus {
+			  border-bottom: solid 2px #666;
+			  outline: 0;
+			} 
 		}
 
-		::-webkit-input-placeholder { color: white; opacity: 1 !important; font-size: rem(17); }
-		:-moz-placeholder { color: white; font-size: rem(17);}
-		::-moz-placeholder {color: white; font-size: rem(17);}
-		:-ms-input-placeholder {color: white; font-size: rem(17);}
+		::-webkit-input-placeholder { color: #c8c8c8; opacity: 1 !important; font-size: rem(17);   }
+		:-moz-placeholder { color: #c8c8c8; font-size: rem(17);}
+		::-moz-placeholder {  color: #c8c8c8;  font-size: rem(17);}
+		:-ms-input-placeholder { color: #c8c8c8;  font-size: rem(17);}
+	}
+}
+
+.course-menu {
+	height: 100%;
+
+	.menu-content {
+		margin: auto;
+		text-align: center;
+		max-width: 65%;
+		margin-top: rem(80); 
+
+		@include media($small) {
+			@include vertical-align;
+			 margin-top: rem(0); 
+			 text-align: left;
+			
+		}
+
+		
+
+		input {
+			height: 70px;
+			color: black;
+			background: white;
+			border: 0; 
+			width: 100%;
+			padding-left: rem(20); 
+			font-size: rem(17);
+
+			 
+			&:focus,
+			&.focus { 
+			  outline: 0;
+			}
+			 
+		}
+
+		::-webkit-input-placeholder { color: #c8c8c8; opacity: 1 !important; font-size: rem(17); }
+		:-moz-placeholder { color: #c8c8c8; font-size: rem(17);}
+		::-moz-placeholder {color: #c8c8c8; font-size: rem(17);}
+		:-ms-input-placeholder {color: #c8c8c8; font-size: rem(17);}
+
+		select {
+
+			width: 100%; 
+			height: 69px;
+			color: #c8c8c8;
+			border: 1px solid #c8c8c8; 
+			font-size: rem(16);
+			margin-top: 3%;
+			padding-left: rem(15);
+			margin-top: rem(20); 
+
+			 
+			@include media($small) {
+				width: 7%;
+				margin-right: rem(20);
+				margin-top: rem(0);
+				padding-left: rem(20);
+			}
+
+			@include media($medium) {
+				width: 36%;
+			}
+
+			option {
+				font-size: rem(16);
+				padding: rem(5);
+				padding-left: rem(20);
+				color: black;
+
+			}
+
+			&:checked { color: black; }
+
+		}
+
+		.button { 
+			height: 69px;
+			vertical-align: middle; 
+			padding-top: 20px;
+			margin-top: rem(20); 
+
+			@include media($small) {
+				 margin-top: rem(0); 
+				
+			}
+		}
 	}
 }
