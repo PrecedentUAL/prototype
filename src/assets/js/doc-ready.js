@@ -21,6 +21,9 @@ $(function() {
 	searchMenu.init(); // searchMenu.js
 	courseMenu.init(); // courseMenu.js
 	studyMenu.init(); // studyMenu.js
+	mobileMenu.init(); // mobileMenu.js
+
+
 
 });
 
