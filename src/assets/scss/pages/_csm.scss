@@ -1,0 +1,58 @@
+// =============================================================================
+//	CSM PAGE
+// =============================================================================
+
+
+#csm {
+
+	.hero-img {
+ 		background-image: url(../img/hero-csm.jpg);
+ 	}
+
+ 	h2 {
+ 		text-transform: capitalize;
+ 		font-size: rem(50);
+ 		@include media($small) {
+			font-size: rem(70);
+		}
+ 	}
+ 	h3 {
+ 		color: white;
+ 		margin: auto;
+ 		font-size: rem(20);
+ 		text-align: center;
+ 	}
+ 	.button-container {
+ 		margin: auto; 
+ 		text-align: center;
+ 		position: relative;
+ 		bottom: inherit;
+ 		margin-top: rem(20);
+ 	}
+
+
+ 	.global-header { 
+ 		nav ul {
+ 			float: right; 
+ 		}
+ 	}
+
+
+ 	.hero-wrap {
+		min-height: 500px;
+		@include media($small) {
+			min-height: 540px;
+		}
+		.hero-content {
+			margin: 55px auto 0;
+			max-width: 84%;
+
+			.button-container a {
+		 		width: 160px;
+		 	}
+
+		}
+	}
+
+
+}

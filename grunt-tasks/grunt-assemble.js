@@ -23,14 +23,14 @@ module.exports = function(grunt) {
 				'<%= project.dist %>': ['<%= project.src %>/template/pages/index.hbs' ]
 			}
 		},
-		// signup: {
-		// 	options: {
-		// 		layout: '<%= project.src %>/template/layouts/signup.hbs'
-		// 	},
-		// 	files: {
-		// 		'<%= project.dist %>': ['<%= project.src %>/template/pages/signup.hbs' ]
-		// 	}
-		// }
+		csm: {
+			options: {
+				layout: '<%= project.src %>/template/layouts/csm.hbs'
+			},
+			files: {
+				'<%= project.dist %>': ['<%= project.src %>/template/pages/csm.hbs' ]
+			}
+		}
 	});
 
 	grunt.loadNpmTasks('assemble');

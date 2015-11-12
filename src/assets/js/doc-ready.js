@@ -22,6 +22,7 @@ $(function() {
 	courseMenu.init(); // courseMenu.js
 	studyMenu.init(); // studyMenu.js
 	mobileMenu.init(); // mobileMenu.js
+	csmMenu.init(); // mobileMenu.js
 
 
 

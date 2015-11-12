@@ -69,4 +69,70 @@
 
 }
 
+
+// college pages
+
+
+.hero-nav {
+	background: rgba(0, 0, 0, 0.5); 
+	height: 90px;
+
+	@include media($small) {
+		height: 110px;
+
+	}
+
+	.hero-nav-inner {
+		@include vertical-align;
+	}
+
+	h1 {
+		margin: rem(0) auto;
+		color: red;
+		font-size: rem(20);
+		text-align: center;
+		line-height: 2rem;
+		text-transform: uppercase;
+		@include media($small) {
+			font-size: rem(30);
+		}
+	}
+
+	ul {
+		display: none; 
+
+		@include media($small) {
+			display: block; 
+		}
+
+
+		margin: rem(20) auto;
+    	width: 100%;
+    	text-align: center;
+
+		li {
+			display: inline-block;
+		}
+	}
+
+	a {
+		color: white;
+		font-size: rem(13);
+		font-family: $font-std;
+		padding: rem(10);
+
+		&.hero-mobile-submenu {
+			display: block;
+			font-size: rem(17);
+			font-family: $font-bold;
+			margin: auto;
+			text-align: center;
+			padding-bottom: rem(0);
+
+			@include media($small) {
+				display: none; 
+			}
+		}
+	}
+}
  

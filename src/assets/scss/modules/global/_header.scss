@@ -63,9 +63,16 @@
 		ul {
 			float: right; 
 			height: 100%; 
-			margin-left: rem(20);
-
 			
+			@include media($small) { 
+				margin-left: rem(20);
+				float: right;
+			}
+			
+			@include media($medium) { 
+				margin-left: rem(20);
+				float: left;
+			}
 			
 			li {
 				display: block;
