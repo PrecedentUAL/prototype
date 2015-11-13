@@ -23,7 +23,7 @@ $(function() {
 	studyMenu.init(); // studyMenu.js
 	mobileMenu.init(); // mobileMenu.js
 	csmMenu.init(); // mobileMenu.js
-
+	desktopMenu.init();
 	twitterCarousel.init(); // twitterCarousel.js
 
 

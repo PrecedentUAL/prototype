@@ -5,6 +5,16 @@
 
 #home {
 
+	a:hover,a:active {
+		color: #e5006e;
+	}
+
+	#section-course-type {
+		a:hover,a:active {
+			color: #e5006e;
+		}	
+	}
+
 	#section-college {
 
 		.college-block {
@@ -60,6 +70,12 @@
 					@include media($medium) {
 						font-size: rem(18); 
 					}
+
+					&:hover,&:active {
+						color: #e5006e;
+					}	
+
+				
 
 				}
 			}

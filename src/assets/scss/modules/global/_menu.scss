@@ -88,7 +88,7 @@
 			}
 
 			
-
+			
 
 
 			&.camberwell:after {
@@ -139,6 +139,10 @@
 					 
 				}
 			}
+
+			&:hover span,&:active span {
+				color: white;
+			}
 		}
 	}
 }
@@ -167,7 +171,7 @@
 
 			@include media($small) {
 				width: 60%;
-				margin: inherit;
+				margin: auto;
 			}
 			&:focus,
 			&.focus {
@@ -180,6 +184,14 @@
 		:-moz-placeholder { color: #c8c8c8; font-size: rem(17);}
 		::-moz-placeholder {  color: #c8c8c8;  font-size: rem(17);}
 		:-ms-input-placeholder { color: #c8c8c8;  font-size: rem(17);}
+
+		.button {
+			&:hover {
+				opacity: 1;
+				background-color: #e5006e;
+				color: $white !important; 
+			}
+		}
 	}
 }
 
@@ -268,6 +280,12 @@
 			@include media($small) {
 				 margin-top: rem(0); 
 				
+			}
+
+			&:hover {
+				opacity: 1;
+				background-color: #e5006e;
+				color: $white !important; 
 			}
 		}
 	}
@@ -449,6 +467,69 @@
 				}
 			}
 
+		}
+	}
+}
+
+.desktop-menu {
+	top: 45px;
+	height: 45px;
+	width: 100%;
+	background-color: white; 
+	color: black;
+
+	.close-button-wrap {
+		position: relative;
+    	max-width: 1280px;
+    	width: 92.5%;
+    	margin: auto;
+	}
+	.menu-close {
+		width: 45px;
+	    height: 45px;
+	    background-repeat: no-repeat;
+	    background-position: center center;
+	    background-color: white;
+	    background-image: url(../img/icon-close-black.png);
+	    top: -45px;
+	    left: 0;
+	    position: absolute;
+	}
+	
+	ul {
+		display: none; 
+
+		@include media($small) {
+			display: block; 
+		}
+
+
+		margin: rem(13) auto;
+    	width: 100%;
+    	text-align: left;
+
+		li {
+			display: inline-block;
+		}
+	}
+
+	a {
+		color: black;
+		font-size: rem(13);
+		font-family: $font-std;
+		padding: rem(10);
+
+		&.hero-mobile-submenu {
+			display: block;
+			font-size: rem(17);
+			font-family: $font-bold;
+			margin: auto;
+			text-align: center;
+			padding-bottom: rem(0);
+
+			@include media($small) {
+				display: none; 
+			}
 		}
 	}
 }
