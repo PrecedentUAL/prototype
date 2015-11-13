@@ -23,6 +23,10 @@
 					margin: 1%;
 					float: left; 
 					background-color: transparent;
+
+					&:nth-child(1) {
+						margin-left: 0;
+					}
 				}
 
 				a {

@@ -3,7 +3,7 @@ var headerTransition = {
 	elms: {
 		headerBg: $('#header-bg'),
 		heroWrap: $('.hero-wrap'),
-		logoSwap: $('.samsung-logo'),
+		logoSwap: $('.-logo'),
 		buyPage: $('body#buy')
 	},
 

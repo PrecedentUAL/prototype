@@ -9,6 +9,7 @@ module.exports = function(grunt) {
 			src: [
 				'*.{ico,png,txt}',
 				'assets/fonts/{,*/}*.*',
+				'assets/js/vendor/slick.min.js',
 				'assets/js/vendor/modernizr.js',
 			],
 		},

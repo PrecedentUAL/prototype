@@ -24,6 +24,7 @@ $(function() {
 	mobileMenu.init(); // mobileMenu.js
 	csmMenu.init(); // mobileMenu.js
 
+	twitterCarousel.init(); // twitterCarousel.js
 
 
 });

@@ -37,6 +37,10 @@
  		}
  	}
 
+ 	.hero {
+ 		top: 55% !important;
+
+ 	}
 
  	.hero-wrap {
 		min-height: 500px;
@@ -44,7 +48,7 @@
 			min-height: 540px;
 		}
 		.hero-content {
-			margin: 55px auto 0;
+			margin: 0 auto 0;
 			max-width: 84%;
 
 			.button-container a {
@@ -55,4 +59,105 @@
 	}
 
 
+	#section-twitter-carousel {
+		margin: rem(40) 0 ;
+
+		.wrapper {
+			overflow: hidden;
+		}
+
+		h3 {
+			text-align: left;
+			color: black;
+			font-size: rem(30);
+			margin-bottom: rem(30);
+		}
+
+		.twitter-content {
+			position: relative;
+
+			@include clearfix;
+
+			.slick-track {
+				position: relative;
+			    top: 0;
+			    left: 0;
+			    display: block;
+			    * {
+			    	outline: 0;
+			    }
+			}
+			.slick-slide {
+				float: left;
+   				height: 100%;
+    			min-height: 1px;
+    			display: block;
+    			p {
+    				font-size: rem(14);
+    				padding-right: rem(60);
+    				line-height: rem(25);
+    				color: black;
+    				a {
+    					color: #de0000;
+    				}
+    			}
+    			.timestamp {
+    				color: #757575;
+    			}
+
+			}  
+			.slick-prev {
+				display: none !important;
+			}
+			.slick-next {
+				position: absolute;
+				right: 0;
+				background: transparent url(../img/arrow-next.png) no-repeat;
+				width: 40px;
+				height: 48px;
+				cursor: pointer; 
+				top: 20%;;
+			}
+		}
+	}
+
+	.placeholder {
+		margin-top: rem(0);
+		@include media($small) {
+			margin-top: rem(60);
+		}
+
+		.wrapper {
+			width: 100%;
+			@include media($small) {
+			width: inherit;
+			}	
+		}
+		.content-desktop {
+			display: none;
+			@include media($medium) {
+				display: block;
+			}
+		}
+		.content-tablet {
+			display: none;
+			@include media($small) {
+				display: block;
+			}
+			@include media($medium) {
+				display: none;
+			}
+		}
+		.content-mobile {
+			display: block;
+			@include media($small) {
+				display: none;
+			}
+		}
+
+
+		img {
+			width: 100%;
+		}
+	}
 }

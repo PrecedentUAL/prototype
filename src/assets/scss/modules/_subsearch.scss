@@ -1,11 +1,11 @@
 #section-subsearch {
 		 
 		@include media($small) {
-			 margin-top: rem(-45);
+			 margin-top: rem(-35);
 		}
 
 		.subsearch-block {
-			margin: rem(10) 0; 
+			margin: 0 0 rem(10) 0; 
 			text-align: left;
 			background-color: $white;
 			padding: rem(10);
