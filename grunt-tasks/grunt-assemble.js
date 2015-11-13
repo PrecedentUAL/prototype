@@ -30,6 +30,22 @@ module.exports = function(grunt) {
 			files: {
 				'<%= project.dist %>': ['<%= project.src %>/template/pages/csm.hbs' ]
 			}
+		},
+		study: {
+			options: {
+				layout: '<%= project.src %>/template/layouts/home.hbs'
+			},
+			files: {
+				'<%= project.dist %>': ['<%= project.src %>/template/pages/study.hbs' ]
+			}
+		},
+		studentfees: {
+			options: {
+				layout: '<%= project.src %>/template/layouts/home.hbs'
+			},
+			files: {
+				'<%= project.dist %>': ['<%= project.src %>/template/pages/studentfees.hbs' ]
+			}
 		}
 	});
 

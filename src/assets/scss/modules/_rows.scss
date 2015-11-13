@@ -8,3 +8,7 @@
 		margin: rem(40) auto rem(40) auto;
 	}
 }
+
+.content-container {
+	@include clearfix;
+}

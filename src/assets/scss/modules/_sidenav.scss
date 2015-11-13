@@ -1,0 +1,81 @@
+// =============================================================================
+//  SIDENAV
+// =============================================================================
+
+.sidenav {
+	display: none;
+	@include media($medium) {
+		display: block;
+		width: 210px;
+		float: left;
+		
+	}
+	ul {
+		margin: rem(40) 0;
+		padding-left: 7%;
+		padding-right: 7%;
+	    background-color: #f5f5f5;
+	    width: 100%; 
+	}
+	li {
+		 
+    	position: relative;
+    	border-bottom: 1px solid #dedede;
+    	&.last {
+    		border-bottom: 0;
+    	}
+	}
+	a {
+		width: 100%;
+	    display: inline-block;
+	    font-size: rem(13);
+	    font-family: $font-std;
+	    color: black;
+	    padding: rem(15) 0;
+	    position: relative;
+	    &.active {
+	    	color: #e5006e;
+	    	font-family: $font-bold;
+	    }
+	    &.subsub {
+			margin-left: 5%;
+		}
+	}
+	.prev {
+		color: #c8c8c8;
+	}
+}
+
+.breadcrumb {
+	 
+		li {
+			a {
+				position: relative;
+				span {
+					background: url(../img/icon-plus-p.png) no-repeat;
+					display: inline-block;
+					position: absolute;
+					right: 10px;
+					top: 20px;
+					width: 12px;
+					height: 12px;
+
+					&.active {
+						background: url(../img/icon-cross-p.png) no-repeat;
+					}
+					&.history-item {
+						display: none;
+					}
+				}
+			}
+		}
+ 
+}
+
+
+
+.main-content {
+	float: left;
+	width: calc(100% - 230px;);
+	margin-left: rem(20);
+}

@@ -25,7 +25,7 @@ $(function() {
 	csmMenu.init(); // mobileMenu.js
 	desktopMenu.init();
 	twitterCarousel.init(); // twitterCarousel.js
-
+	breadCrumb.init(); // breadCrumb.js  
 
 });
 
