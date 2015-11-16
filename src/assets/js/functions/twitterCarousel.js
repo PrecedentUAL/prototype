@@ -9,7 +9,7 @@ var twitterCarousel = {
 			slidesToShow: 3,
 			slidesToScroll: 1,
 			swipe: true,
-			nextArrow:"<img class='a-right control-c next slick-next' src='../assets/img/arrow-next.jpg'>",
+			nextArrow:"<img class='a-right control-c next slick-next' src='assets/img/arrow-next.jpg'>",
 			responsive: [
 			{
 			  breakpoint: 1280,
