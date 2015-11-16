@@ -13,7 +13,7 @@
 	.wrapper {
 		height: 100%; 
 		width: 100%;
-		@include media($small) {  
+		@include media($medium) {  
 			width: 92.5%;
 		}
 	}

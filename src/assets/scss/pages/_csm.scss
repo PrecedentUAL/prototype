@@ -16,10 +16,11 @@
 
 	.hero-nav { 
 
-		h1 {
+		h1 a {
 			font-family: 'Levi';
 			font-size: rem(18);
 			text-transform: uppercase;
+			color: #d10000;
 
 			@include media($small) {
 				font-size: rem(32);
@@ -35,6 +36,8 @@
 	.hero-img {
  		background-image: url(../img/hero-csm.jpg);
  	}
+
+ 
 
  	h2 {
  		text-transform: capitalize;
@@ -125,6 +128,12 @@
 		font-family: 'Levi';
 		font-size: rem(20);
 	} 
+
+
+	#section-course-type {
+		
+	}
+
 
 	#section-course-type a:hover {
 		color: #d10000;

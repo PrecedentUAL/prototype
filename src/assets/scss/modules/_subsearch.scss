@@ -1,6 +1,8 @@
 #section-subsearch {
 		z-index: 10;
 		position: relative;
+		@include clearfix;
+		margin-top: rem(20);
 		@include media($small) {
 			 margin-top: rem(-35);
 		}

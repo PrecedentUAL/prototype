@@ -2,13 +2,38 @@
 .row {
 	width: 100%; 
 	margin: rem(20) auto rem(20) auto;
-	text-align: center;
+	text-align: left;
+
 	 
 	@include media($small) {
 		margin: rem(40) auto rem(40) auto;
+	}
+
+	h2 {
+		font-family: 'Levi';
+		font-size: rem(40);
+	}
+
+	p {
+		font-family: $font-std;
+		font-size: rem(16);
+		a {
+			color: black;
+		}
+	}
+	p.leader {
+		font-size: rem(20);
+	}
+	ul.copy-list li a {
+		color: black !important;
+		font-size: rem(16);
+		padding: rem(5) 0;
+		display: inline-block;
+
 	}
 }
 
 .content-container {
 	@include clearfix;
 }
+

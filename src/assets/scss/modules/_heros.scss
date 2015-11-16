@@ -139,3 +139,31 @@
 	}
 }
  
+.csm-hero {
+	background-color: white;
+		
+
+		h1 a {
+			font-family: 'Levi';
+			font-size: rem(18);
+			text-transform: uppercase;
+			color: #d10000;
+
+
+			@include media($small) {
+				font-size: rem(32);
+			}
+
+			@include media($medium) {
+				font-size: rem(36);
+			}
+
+			&:hover { color: #d10000  !important; }
+		}
+
+		ul li a, .hero-mobile-submenu {
+			color: black;
+			&:hover, &.active { color: #d10000 !important; }
+		}
+ 
+}
