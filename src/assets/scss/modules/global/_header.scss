@@ -61,7 +61,7 @@
 
 
 		ul {
-			float: right; 
+			float: left; 
 			height: 100%; 
 			
 			@include media($small) { 
@@ -72,6 +72,11 @@
 			@include media($medium) { 
 				margin-left: rem(20);
 				float: left;
+			}
+
+			&.meganav-master {
+
+				float: right;
 			}
 			
 			li {

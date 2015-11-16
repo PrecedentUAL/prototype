@@ -57,7 +57,7 @@
 	<div class="menu-content"> 
 	<div class="wrapper">
 		<ul>
-			<li><a href="javascript:void(0)">Study</a></li>
+			<li><a href="./study.html" class="{{#is page.basename "study"}}active{{/is }}">Study</a></li>
 			<li><a href="javascript:void(0)">Courses</a></li>
 			<li><a href="javascript:void(0)">Foundation Diploma in Art & Design</a></li>
 			<li><a href="javascript:void(0)">Postrgraduate Study</a></li>
@@ -73,7 +73,7 @@
 			<li><a href="javascript:void(0)">Enrol</a></li>
 		</ul>
 		<ul>
-			<li><a href="javascript:void(0)">Student Fees & Funding</a></li>
+			<li><a href="studentfees.html">Student Fees & Funding</a></li>
 			<li><a href="javascript:void(0)">Student Services</a></li>
 			<li><a href="javascript:void(0)">Library Services</a></li>
 			<li><a href="javascript:void(0)">Term Dates</a></li>
@@ -98,7 +98,8 @@
 		<ul>
 			<li><a href="#" class="trigger-subnav">Study<span></span></a></li>
 							
-							<ul class="menu-expanded">	
+							<ul class="menu-expanded {{#is page.basename "studentfees"}}expanded{{/is }}{{#is page.basename "study"}}expanded{{/is }}">	
+								<li><a href="./study.html" class="{{#is page.basename "study"}}active{{/is }}">Study</a></li>
 								<li><a href="javascript:void(0)">Courses</a></li>
 								<li><a href="javascript:void(0)">Foundation Diploma in Art & Design</a></li>
 								<li><a href="javascript:void(0)">Postrgraduate Study</a></li>
@@ -110,7 +111,7 @@
 								<li><a href="javascript:void(0)">Open Days</a></li>
 								<li><a href="javascript:void(0)">Apply</a></li>
 								<li><a href="javascript:void(0)">Enrol</a></li>
-								<li><a href="javascript:void(0)">Student Fees & Funding</a></li>
+								<li><a href="./studentfees.html" class="{{#is page.basename "studentfees"}}active{{/is }}">Student Fees & Funding</a></li>
 								<li><a href="javascript:void(0)">Student Services</a></li>
 								<li><a href="javascript:void(0)">Library Services</a></li>
 								<li><a href="javascript:void(0)">Term Dates</a></li>

@@ -7,9 +7,11 @@ var mobileMenu = {
 		body: $('body'),
 		openSubmenu: $('.trigger-subnav'),
 		menuExpanded: $('.menu-expanded'),
+		menuExpandedDefault: $('.expanded'),
 		subMenuItem: $('.menu-expanded li a'),
 		subMenuStatus: $('.menu-expanded li a span')
 	},
+ 
 
 	openMenu: function( e ) {
 		e.preventDefault();
@@ -42,10 +44,15 @@ var mobileMenu = {
 		mobileMenu.elms.subMenuItem.on('click touch', function( e ) {
 			return false(e);
 		});
+	 
+			
+	 
 	},
 
 	init: function() {
 		mobileMenu.eventListeners();
 		mobileMenu.elms.menuExpanded.fadeOut(600);
+		mobileMenu.elms.menuExpandedDefault.slideDown(600);
+		mobileMenu.elms.menuExpandedDefault.prev().children('.trigger-subnav').children('span').addClass('active');
 	}
 };

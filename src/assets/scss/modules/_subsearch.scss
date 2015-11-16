@@ -1,5 +1,6 @@
 #section-subsearch {
-		 
+		z-index: 10;
+		position: relative;
 		@include media($small) {
 			 margin-top: rem(-35);
 		}
@@ -64,10 +65,16 @@
  
 
 			}
+
+			* {
+				outline: 0;
+			}
+
 			.button {
 				margin-top: 3%;
 				width: 100%;
 				text-align: center;
+				float: right; 
 				@include media($small) {
 					width: auto; 
 					margin-left: 1%;

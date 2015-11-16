@@ -14,21 +14,43 @@
 		background-color: #d10000;
 	}
 
+	.hero-nav { 
+
+		h1 {
+			font-family: 'Levi';
+			font-size: rem(18);
+			text-transform: uppercase;
+
+			@include media($small) {
+				font-size: rem(32);
+			}
+
+			@include media($medium) {
+				font-size: rem(36);
+			}
+		}
+
+	}
+
 	.hero-img {
  		background-image: url(../img/hero-csm.jpg);
  	}
 
  	h2 {
  		text-transform: capitalize;
- 		font-size: rem(50);
+ 		font-size: rem(40);
+ 		font-family: 'Levi';
  		@include media($small) {
-			font-size: rem(70);
+			font-size: rem(54);
+		}
+		@include media($medium) {
+			font-size: rem(64);
 		}
  	}
  	h3 {
  		color: white;
  		margin: auto;
- 		font-size: rem(20);
+ 		font-size: rem(18);
  		text-align: center;
  	}
  	.button-container {
@@ -99,11 +121,26 @@
 		}
 	}
 
+	#section-course-type .inner-content ul li a {
+		font-family: 'Levi';
+		font-size: rem(20);
+	} 
+
 	#section-course-type a:hover {
 		color: #d10000;
 	}
 
+	#section-subsearch .subsearch-block {
 
+		select {
+			color: #757575;
+		}
+
+		::-webkit-input-placeholder { color: #757575;}
+		:-moz-placeholder { color: #757575;}
+		::-moz-placeholder {color: #757575;}
+		:-ms-input-placeholder {color: #757575;}
+	}
 	#section-twitter-carousel {
 		margin: rem(40) 0 ;
 		position: relative;
@@ -120,9 +157,18 @@
 
 		h3 {
 			text-align: left;
-			color: black;
-			font-size: rem(30);
+			color: black; 
 			margin-bottom: rem(30);
+			font-family: 'Levi';
+			font-size: rem(18); 
+
+			@include media($small) {
+				font-size: rem(32);
+			}
+
+			@include media($medium) {
+				font-size: rem(36);
+			}
 		}
 		
 		.wrapper-additional {

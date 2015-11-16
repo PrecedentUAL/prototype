@@ -76,6 +76,11 @@
 
 .main-content {
 	float: left;
-	width: calc(100% - 230px;);
-	margin-left: rem(20);
+	width: 100%;
+
+	@include media($medium) {
+		width: calc(100% - 230px;);
+		margin-left: rem(20);
+	
+	}
 }
