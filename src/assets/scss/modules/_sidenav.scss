@@ -77,7 +77,17 @@
 				&:hover span {
 					background: url(../img/icon-plus-p.png) no-repeat;
 				}
+
+
 			}
+
+			&.lead a {
+				color: black;
+			}
+			&.border a {
+				color: #c8c8c8;
+			}
+
 		}
  
 }

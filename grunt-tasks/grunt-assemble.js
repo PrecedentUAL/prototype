@@ -54,6 +54,22 @@ module.exports = function(grunt) {
 			files: {
 				'<%= project.dist %>': ['<%= project.src %>/template/pages/studentfees.hbs' ]
 			}
+		},
+		lcc: {
+			options: {
+				layout: '<%= project.src %>/template/layouts/blank.hbs'
+			},
+			files: {
+				'<%= project.dist %>': ['<%= project.src %>/template/pages/lcc.hbs' ]
+			}
+		},
+		chelsea: {
+			options: {
+				layout: '<%= project.src %>/template/layouts/blank.hbs'
+			},
+			files: {
+				'<%= project.dist %>': ['<%= project.src %>/template/pages/chelsea.hbs' ]
+			}
 		}
 	});
 

@@ -2,73 +2,101 @@
 //  PLACEHOLDER for temp images
 // =============================================================================
 .placeholder {
-		margin-top: rem(0);
-		@include media($small) {
-			margin-top: rem(60);
-		}
-
-		.wrapper {
-			width: 100%;
-			@include media($small) {
-			width: inherit;
-			}	
-		}
-		.inner-content {
-			margin: auto;
-			text-align: center;
-		}
-		.content-desktop {
-			display: none;
-			@include media($medium) {
-				display: block;
-			}
-		}
-		.content-tablet {
-			display: none;
-			@include media($small) {
-				display: block;
-			}
-			@include media($medium) {
-				display: none;
-			}
-		}
-		.content-mobile {
-			display: block;
-			@include media($small) {
-				display: none;
-			}
-		}
- 
+	margin-top: rem(0);
+	@include media($small) {
+		margin-top: rem(60);
 	}
 
-
-	.placeholderx2 {
-		margin-top: rem(0);
+	.wrapper {
+		width: 100%;
 		@include media($small) {
-			margin-top: rem(60);
-		}
-
-		.wrapper {
-			width: 100%;
-			@include media($small) {
-			width: inherit;
-			}	
-		}
-		.inner-content {
-			margin: auto;
-			text-align: center;
-		}
-		.content-desktop {
-			display: none;
-			@include media($small) {
-				display: block;
-			}
-		} 
-		.content-mobile {
-			display: block;
-			@include media($small) {
-				display: none;
-			}
-		}
- 
+		width: inherit;
+		}	
 	}
+	.inner-content {
+		margin: auto;
+		text-align: center;
+	}
+	.content-desktop {
+		display: none;
+		@include media($medium) {
+			display: block;
+		}
+	}
+	.content-tablet {
+		display: none;
+		@include media($small) {
+			display: block;
+		}
+		@include media($medium) {
+			display: none;
+		}
+	}
+	.content-mobile {
+		display: block;
+		@include media($small) {
+			display: none;
+		}
+	}
+
+}
+
+
+.placeholderx2 {
+	margin-top: rem(0);
+	@include media($small) {
+		margin-top: rem(60);
+	}
+
+	.wrapper {
+		width: 100%;
+		@include media($small) {
+		width: inherit;
+		}	
+	}
+	.inner-content {
+		margin: auto;
+		text-align: center;
+	}
+	.content-desktop {
+		display: none;
+		@include media($small) {
+			display: block;
+		}
+	} 
+	.content-mobile {
+		display: block;
+		@include media($small) {
+			display: none;
+		}
+	}
+
+}
+
+.placeholder-full {
+	margin-top: rem(0); 
+	
+	.wrapper {
+		width: 100%;
+		@include media($small) {
+		width: inherit;
+		}	
+	}
+	.inner-content {
+		margin: auto;
+		text-align: center;
+	}
+	.content-desktop {
+		display: none;
+		@include media($small) {
+			display: block;
+		}
+	} 
+	.content-mobile {
+		display: block;
+		@include media($small) {
+			display: none;
+		}
+	}
+
+}
