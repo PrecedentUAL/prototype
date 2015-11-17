@@ -9,7 +9,8 @@ var mobileMenu = {
 		menuExpanded: $('.menu-expanded'),
 		menuExpandedDefault: $('.expanded'),
 		subMenuItem: $('.menu-expanded li a'),
-		subMenuStatus: $('.menu-expanded li a span')
+		subMenuStatus: $('.menu-expanded li a span'),
+		screenOverlay: $('.screen-overlay')
 	},
  
 
@@ -17,6 +18,7 @@ var mobileMenu = {
 		e.preventDefault();
 		mobileMenu.elms.actualMenu.fadeIn(600);
 		mobileMenu.elms.body.addClass('overflow-hide');
+		mobileMenu.elms.screenOverlay.fadeIn(600);
 	},
 
 	closeMenu: function( e ) {
@@ -26,6 +28,7 @@ var mobileMenu = {
 		mobileMenu.elms.menuExpanded.fadeOut(600);
 		mobileMenu.elms.openSubmenu.children('span').removeClass('active');
 		mobileMenu.elms.body.removeClass('overflow-hide');
+		mobileMenu.elms.screenOverlay.fadeOut(600);
 	},
 
 	eventListeners: function() {

@@ -10,12 +10,17 @@
 		<input placeholder="Find a course at UAL" /><br/>
 		<select>
 			<option>Level</option>
-			<option>Level 2</option>
-			<option>Level 3</option>
-			<option>Level 4</option>
-			<option>Level 5</option>
+			<option>Foundation</option>
+			<option>Undergraduate</option>
+			<option>Postgraduate</option>
+			<option>Short Course</option>
 		</select>
 		<a href="#" class="button">Search</a>
+
+		<br/>
+		<p>
+		<a href="#" class="viewall">or View all courses</a>
+		</p> 
 	</div>
 </nav>
 
@@ -92,9 +97,12 @@
 	</div>
 </nav>
 
+<div class="screen-overlay"></div>
+
 <nav id="mobile-menu" class="global-menu mobile-menu">
 	<div class="menu-content">  
 		<a href="#" title="Close main menu" id="mobile-menu-close" class="menu-button menu-close">Close</a>
+		<div class="search-container"><input placeholder="Start typing here to search..." /></div>
 		<ul>
 			<li><a href="#" class="trigger-subnav">Study<span></span></a></li>
 							
@@ -222,8 +230,8 @@
 <nav id="csm-menu" class="global-menu csm-menu"> 
 		<ul>
 			<li><a href="#" id="csm-menu-close" class="menu-button menu-close">Close</a></li>
-			<li><a href="csm.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
+			<li><a href="csm.html" class="{{#is page.basename "csm"}}active{{/is }}">Home</a></li>
+			<li><a href="about.html" class="{{#is page.basename "about"}}active{{/is }}">About</a></li>
 			<li><a href="javascript:void(0)">Courses</a></li>
 			<li><a href="javascript:void(0)">What's on</a></li>
 			<li><a href="javascript:void(0)">CSM Public</a></li>

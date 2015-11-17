@@ -4,7 +4,8 @@ var breadCrumb = {
 		body: $('body'),
 		bcToggle: $('#breadcrumb-toggle'),
 		historyItems: $('.history-item'),
-		bIcon: $('#breadcrumb-icon')
+		bIcon: $('#breadcrumb-icon'),
+		hasBorder: $('.lead')
 	},
 
 	eventListeners: function() {
@@ -13,6 +14,7 @@ var breadCrumb = {
 			e.preventDefault(); 
 			breadCrumb.elms.historyItems.slideToggle(600);
 			breadCrumb.elms.bIcon.toggleClass("active");
+			breadCrumb.elms.hasBorder.toggleClass("border");
 		}); 
 	},
 

@@ -122,18 +122,24 @@
 					}
 
 					&.search {
-						
+						display: none;
 						 
 						@include media($small) { 
-							 
+							display: block; 
 							border-right: 1px solid #373737; 
 						}
 						span {
-							background: transparent url(../img/icon-search.png) no-repeat;
+							background: transparent url(../img/icon-search-w.png) no-repeat;
 							display: inline-block;
 							width: 15px;
 							height: 16px;
+
+							
 						}
+
+						&:hover span {
+								background: transparent url(../img/icon-search-p.png) no-repeat;
+							}
 
 					}
 
